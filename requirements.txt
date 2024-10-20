@@ -1,4 +1,5 @@
 xlsxwriter==1.4.3
 st-gsheets-connection
 gspread
+oauth2client
 
