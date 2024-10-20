@@ -8,7 +8,7 @@ st.title('Hallo')
 st.markdown("Hallo2")
 conn = st.connection("gsheets", type = GSheetsConnection)
 
-print(st.secrets["gsheets"]['spreadsheet'])
+st.markdown(st.secrets["gsheets"]['spreadsheet'])
 
 try:
     df_contacts = conn.read(spreadsheet=st.secrets["gsheets"]['spreadsheet'])
