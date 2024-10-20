@@ -1,0 +1,1 @@
+This tool is made for Smart-Consultant and is meant to optimize a part of the bd internal function.
