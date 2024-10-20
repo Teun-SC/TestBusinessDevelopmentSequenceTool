@@ -10,7 +10,7 @@ def get_gsheet_data(spreadsheet_name, worksheet_name):
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     
     # Load the credentials from Streamlit secrets
-    creds = json.loads(st.secrets["gsheets"]["service_account"])
+    creds = json.loads(st.secrets["gspread"]["service_account"])  # Use the TOML formatted secret
     
     # Create a service account credentials object
     credentials = ServiceAccountCredentials.from_json_keyfile_dict(creds, scope)
