@@ -10,7 +10,7 @@ conn = st.connection("gsheets", type = GSheetsConnection)
 
 
 try:
-    df_contacts = conn.read(spreadsheet=st.secrets["gsheets"]['spreadsheet'])
+    df_contacts = conn.read(spreadsheet=st.secrets["gsheets"]['spreadsheet'], worksheet='Database Contacts')
 except HTTPError as e:
     st.error(f"Failed to connect to Google Sheets: {e}")
 
