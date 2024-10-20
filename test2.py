@@ -6,5 +6,5 @@ import pandas as pd
 st.title('Hallo')
 st.markdown("Hallo2")
 conn = st.connection("gsheets", type = GSheetsConnection)
-df_contacts = conn.read(worksheet='Database Contacts')
+df_contacts = conn.read()
 
